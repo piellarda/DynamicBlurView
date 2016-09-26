@@ -48,7 +48,7 @@ public class DynamicBlurView: UIView {
     }
     
     private var blurPresentationLayer: BlurLayer {
-        if let layer = blurLayer.presentationLayer() {
+        if let layer = blurLayer.presentationLayer() as? BlurLayer {
             return layer
         }
         
